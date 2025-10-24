@@ -1,0 +1,54 @@
+# Image Generation System Configuration
+
+# Model Settings
+models:
+  stable_diffusion:
+    model_id: "runwayml/stable-diffusion-v1-5"
+    enabled: true
+    
+  sdxl:
+    model_id: "stabilityai/stable-diffusion-xl-base-1.0"
+    refiner_id: "stabilityai/stable-diffusion-xl-refiner-1.0"
+    enabled: true
+    
+  dreamshaper:
+    model_id: "Lykon/DreamShaper"
+    enabled: true
+    
+  controlnet:
+    model_id: "lllyasviel/control_v11p_sd15_canny"
+    enabled: true
+
+# Generation Parameters
+generation:
+  default_steps: 50
+  default_guidance_scale: 7.5
+  default_width: 512
+  default_height: 512
+  
+  sdxl_width: 1024
+  sdxl_height: 1024
+  
+  num_images_per_prompt: 1
+  seed: null  # null for random, or set a number for reproducibility
+
+# Hardware Settings
+hardware:
+  device: "cuda"  # "cuda" for GPU, "cpu" for CPU
+  dtype: "float16"  # "float16" for GPU, "float32" for CPU
+  enable_xformers: true  # Memory efficient attention
+  enable_cpu_offload: false  # Enable if low VRAM
+
+# Output Settings
+output:
+  save_path: "data/generated_images"
+  save_format: "png"
+  save_metadata: true
+
+# Evaluation Settings
+evaluation:
+  clip_model: "openai/clip-vit-large-patch14"
+  metrics:
+    - "clip_score"
+    - "inception_score"
+    - "fid"

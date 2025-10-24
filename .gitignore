@@ -1,0 +1,41 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.class
+*.so
+.Python
+env/
+venv/
+ENV/
+LLM/
+*.egg-info/
+*.egg
+
+# Generated images and models (too large for GitHub)
+data/generated_images/*.png
+data/generated_images/*.jpg
+data/generated_images/*.json
+models/
+*.safetensors
+*.bin
+*.ckpt
+*.pth
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment
+.env
+
+# Test files
+test_output/
