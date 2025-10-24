@@ -20,7 +20,7 @@ A comprehensive multi-model text-to-image generation system powered by state-of-
 
 \\\ash
 # Clone the repository
-git clone https://github.com/amal-hash-tes/ai-image-generation-system.git
+git clone https://github.com/Amal-hash-tech/ai-image-generation-system.git
 cd ai-image-generation-system
 
 # Install dependencies
@@ -132,7 +132,7 @@ MIT License - feel free to use this project for learning and development.
 
 ##  Contact
 
-**Amal** - [GitHub](https://github.com/amal-hash-tes)
+**Amal** - [GitHub](https://github.com/Amal-hash-tech)
 
 ---
 
